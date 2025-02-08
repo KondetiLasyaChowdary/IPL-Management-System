@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: url('th.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        form {
+            border: 0px solid #f1f1f1;
+        }
+
+        h2 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        input[type=text], input[type=password] {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button, button1 {
+            width: 10%;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button1 {
+            background-color: #E6BAA2;
+            color: white;
+        }
+
+        button:hover, button1:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #b43d35;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 0%;
+            border-radius: 0%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: url('ipllogin.jpg');">
+    <h2>Admin Login</h2>
+    <form action="admin.php" method="post">
+        <div class="imgcontainer"></div>
+        <div class="container" style="text-align:center;">
+            <label for="uname"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="uname" required><br><br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="psw" required><br><br>
+            <button type="submit">Login</button><br><button1 style="float:right ;"><a href="index.html">Back</a></button1>
+        </div>
+    </form>
+</body>
+</html>

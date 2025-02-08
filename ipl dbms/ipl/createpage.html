@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            border: 0px solid #f1f1f1;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 20%;
+            text-align: right;
+            margin-right: 2%;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 40%;
+            padding: 12px;
+            margin-bottom: 8px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 10%;
+            text-align: center;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            text-align: center;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body style="background: url('createpage.png') no-repeat center center fixed; background-size: cover;">
+
+<h1><b>CREATE AN ACCOUNT</b></h1>
+<form action="create.php" method="post">
+    <div class="container">
+        <label for="uname"><b>NEW USER:</b></label>
+        <input type="text" placeholder="Enter name" name="uname" required><br>
+
+        <label for="email"><b>ENTER EMAIL:</b></label>
+        <input type="email" placeholder="Enter email" name="email" required><br>
+
+        <label for="psw"><b>PASSWORD:</b></label>
+        <input type="password" placeholder="Enter password" name="psw" required><br>
+
+        <label for="conpsw"><b>CONFIRM PASSWORD:</b></label>
+        <input type="password" placeholder="Enter password" name="conpsw" required><br>
+
+        <button type="submit">SUBMIT</button><br>
+        <button>Already have an Account<a href="login.html">Login</a></button>
+    </div>
+</form>
+
+</body>
+</html>
